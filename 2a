@@ -1,0 +1,9 @@
+> convert_kelvin_to_celsius <- function(temp) {
++  celsius <- temp - 273.15
++   return(celsius)
++ }
+> convert_kelvin_to_celsius(0)
+[1] -273.15
+> convert_kelvin_to_celsius(25)
+[1] -248.15
+> 
