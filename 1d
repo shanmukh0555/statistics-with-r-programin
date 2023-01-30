@@ -1,0 +1,23 @@
+> height <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+> weight <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+> cor(height, weight)
+[1] 0.9771296
+> a <- data.frame(height = 170)
+> result <-  predict(relation,a)
+Error in predict(relation, a) : object 'relation' not found
+> relation <- lm(weight~height)
+> relation
+
+Call:
+lm(formula = weight ~ height)
+
+Coefficients:
+(Intercept)       height  
+   -38.4551       0.6746  
+
+> a <- data.frame(height = 170)
+> result <-  predict(relation,a)
+> result
+       1 
+76.22869 
+> 
