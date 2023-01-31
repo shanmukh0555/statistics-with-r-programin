@@ -1,0 +1,42 @@
+myinput<-c(5,4,8,9,40)
+lottery<-sample(1:49,6,replace=F)
+wrongguesses<-length(setdiff(lottery,myinput))
+if(wrongguesses==6){
+	print("Mom won the lottery")
+}else{
+	print("Mom didn't win the lottery")
+}
+
+
+
+
+n<-as.integer(readline(prompt="Enter a number : "))
+am=0
+a=n
+while(n>0){
+	rem=n%%10
+	am=am+(rem*rem*rem)
+	n=n%/%10
+}
+if(a==am){
+	print("It is a amstrong number ")
+}else{
+	print("It is not a amstrong number ")
+}
+
+kelvin_to_celcius<-function(n){
+	celcius=n-273.15
+	print(celcius)
+}
+n<-as.integer(readline(prompt="Enter the number : "))
+kelvin_to_celcius👎
+
+
+a<-list(name="Shin Ha Ri ", Roll.no=1)
+class(a)<-"Student"
+print.Student<-function(o){
+	print(o$name)
+	print(o$Roll.no)
+}
+print.Student(a)
+print.table(a)
